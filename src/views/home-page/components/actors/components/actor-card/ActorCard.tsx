@@ -16,7 +16,7 @@ export default class ActorCard extends React.PureComponent<IProps, IState> {
     return (
       <Card key={cardData.person.name}>
         <Card.Content>
-          <Image floated="right" size="mini" src={image ?? missingImage} />
+          <Image floated="right" size="mini" src={image ?? missingImage} onClick={() => window.alert('')} />
           <Card.Header>{cardData.person.name}</Card.Header>
           <Card.Meta>as {cardData.character.name}</Card.Meta>
           <Card.Description>
